@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="programm" lang="ru">
+<html class="form" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>Название проекта</title>
@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="programm__body programm__body-background-style">
-    <header class="programm-header">
-      <a class="programm-header__logo">
+  <body class="form__body form__body-background-style">
+    <header class="form-header">
+      <a class="form-header__logo">
         <img
           src="/source/images/icons/logo-pic.svg"
           width="70px"
@@ -64,35 +64,158 @@
           />
         </svg>
       </a>
-      <nav class="programm-nav">
-        <button class="programm-nav__toggle" type="button">
+      <nav class="form-nav">
+        <button class="form-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="programm-nav__wrapper">
-          <ul class="programm-nav__list">
-            <li class="programm-nav__list-item">
-              <a class="programm-nav__link" href="index.html">главная</a>
+        <div class="form-nav__wrapper">
+          <ul class="form-nav__list">
+            <li class="form-nav__list-item">
+              <a class="form-nav__link" href="index.html">главная</a>
             </li>
-            <li class="programm-nav__list-item">
-              <a class="programm-nav__link" href="catalog.html"
+            <li class="form-nav__list-item">
+              <a class="form-nav__link" href="catalog.html"
                 >каталог продукции</a
               >
             </li>
-            <li class="programm-nav__list-item">
-              <a class="programm-nav__link" href="programm.html"
-                >подбор программы</a
-              >
+            <li class="form-nav__list-item">
+              <a class="form-nav__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="programm-container">
-      <div class="programm-container__wrapper">
-        <h1 class="programm-container__title-h1"
-        <section class="">
+    <main class="form-container">
+      <div class="form-container__wrapper">
+        <h1 class="form-container__title-h1">Подбор программы</h1>
+        <p>заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <section class="date">
+          <form class="" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="">
+              <h2 class="visually-hidden">характеристики кота</h2>
+              <fieldset class="">
+                <label class="">
+                  Имя:*
+                  <input
+                    class=""
+                    type="text"
+                    placeholder="Барсик"
+                    name="name"
+                    required
+                  />
+                </label>
 
+                <label class="">
+                  вес (кг):*
+                  <input
+                    class=""
+                    type="text"
+                    placeholder="7"
+                    name="weight"
+                    required
+                  />
+                </label>
+
+                <label class="">
+                  возраст (лет):
+                  <input
+                    class=""
+                    type="text"
+                    placeholder="7"
+                    name="age"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset class="">
+                <label class="">
+                  <input class="" type="radio" name="group-programm" checked />
+                  <span class=""></span>
+                  <span>похудение</span>
+                </label>
+
+                <label class="">
+                  <input class="" type="radio" name="group-programm" />
+                  <span class=""></span>
+                  <span>набор массы</span>
+                </label>
+
+                <label class="">
+                  <input class="" type="radio" name="group-programm" />
+                  <span class=""></span>
+                  <span>не знаю (нужен ваш совет)</span>
+                </label>
+              </fieldset>
+            </div>
+
+            <div class="">
+              <h2 class="">контактные данные(владельца кота)</h2>
+              <fieldset class="">
+                <label class="">
+                  email:*
+                  <input
+                    class=""
+                    type="email"
+                    placeholder="kuklachev@gmail.com"
+                    name="email"
+                    required
+                  />
+                </label>
+
+                <label class="">
+                  <input
+                    class=""
+                    type="phone"
+                    placeholder="8 (960) 900-60-90"
+                    name="phone"
+                    required
+                  />
+                </label>
+              </fieldset>
+            </div>
+
+            <div class="">
+              <h2 class="">комментарий</h2>
+              <label class="">
+                <input
+                  class=""
+                  type="text"
+                  placeholder="Расскажите обо всех повадках кота"
+                  name="comments"
+                />
+              </label>
+            </div>
+
+            <div class="">
+              <h2 class="">Дополнительно</h2>
+              <fieldset class="">
+                <label class="">
+                  <input class="" type="checkbox" name="sweetener" checked />
+                  <span>сахарозаменитель</span>
+                </label>
+                <label class="">
+                  <input class="" type="checkbox" name="water" />
+                  <span>питьевая вода</span>
+                </label>
+                <label class="control">
+                  <input class="" type="checkbox" name="milk" />
+                  <span>молоко</span>
+                </label>
+                <label class="control">
+                  <input class="" type="checkbox" name="vitamins" />
+                  <span>витамины</span>
+                </label>
+              </fieldset>
+            </div>
+
+            <button class="" type="submit">
+              Отправить заявку
+            </button>
+            <small class="">
+              * — Обязательные поля
+            </small>
+          </form>
         </section>
 
         <section class="map">
@@ -107,8 +230,8 @@
       </div>
     </main>
 
-    <footer class="programm-footer">
-      <a class="programm-footer__logo">
+    <footer class="form-footer">
+      <a class="form-footer__logo">
         <img
           src="/source/images/icons/logo-text.svg"
           width="128px"
@@ -173,7 +296,7 @@
         </li>
       </ul>
 
-      <a class="programm-footer__logo-academy" hraf="#">
+      <a class="form-footer__logo-academy" hraf="#">
         <p>HTML Academy</p>
         <svg
           aria-hidden="true"
